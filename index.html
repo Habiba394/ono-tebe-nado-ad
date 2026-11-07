@@ -17,8 +17,10 @@
   <body class="page">
     <header class="header" id="main">
       <nav class="header__nav" aria-label="Основное меню">
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#main">главная</a></li>
+        <ul class="menu menu_type_header">
+          <li class="menu__item">
+            <a class="menu__link menu__link_current" href="#main" aria-current="page">главная</a>
+          </li>
           <li class="menu__item"><a class="menu__link" href="#lots">посмотреть лоты</a></li>
           <li class="menu__item"><a class="menu__link" href="#about">об аукционе</a></li>
         </ul>
@@ -36,11 +38,14 @@
     <main class="content">
       <section class="cover" aria-labelledby="cover-title">
         <h1 class="cover__title" id="cover-title">
-          <span class="cover__word cover__word_left">Оно</span>
-          <span class="cover__word cover__word_center">тебе</span>
-          <span class="cover__word cover__word_right">надо</span>
+          <span class="cover__word cover__word_first">Оно</span>
+          <span class="cover__word cover__word_second">тебе</span>
+          <span class="cover__word cover__word_third">надо</span>
         </h1>
-        <p class="cover__subtitle">аукцион вещей, в которые никто не верил</p>
+        <div class="cover__bottom">
+          <p class="cover__subtitle">аукцион вещей, в которые никто не верил</p>
+          <a class="cover__button" href="#lots">Сделать ставку</a>
+        </div>
       </section>
 
       <section class="lots" id="lots" aria-labelledby="lots-title">
@@ -103,8 +108,10 @@
         <p class="contacts__address">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__nav" aria-label="Меню в подвале">
-        <ul class="menu menu_type_column">
-          <li class="menu__item"><a class="menu__link" href="#main">главная</a></li>
+        <ul class="menu menu_type_footer">
+          <li class="menu__item">
+            <a class="menu__link menu__link_current" href="#main" aria-current="page">главная</a>
+          </li>
           <li class="menu__item"><a class="menu__link" href="#lots">посмотреть лоты</a></li>
           <li class="menu__item"><a class="menu__link" href="#about">об аукционе</a></li>
         </ul>
